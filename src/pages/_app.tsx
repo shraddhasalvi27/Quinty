@@ -12,7 +12,7 @@ import "../styles/globals.css";
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <div className="bg-default-900">
+    <div className="bg-default-900 h-screen">
       <Head>
         <title>Solana token creator</title>
       </Head>
@@ -20,7 +20,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
         <Notifications />
         <AppBar />
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
       </ContextProvider>
 
       {/* Proper way to load external scripts in Next.js */}

@@ -1,11 +1,8 @@
-export{HomeView} from "./home";
-export{ToolView} from "./tool";
-export{FeatureView} from "./feature";
-export{OfferView} from "./offer";
-export{FaqView} from "./faq"
-export{AirdropView} from "./airdrop";
-export{DonateView} from "./donate";
-export{CreateView} from "./create";
-export{InputView} from "./input";
-export{TokenMetadata} from "./tokenMetadata";
-export {ContactView} from "./contact"
+export{HomeView} from "./home";  //done
+export{ToolView} from "./tools"; //done
+export{AirdropView} from "./airdrop"; //done
+export{DonateView} from "./donate";  //done
+export{CreateView} from "./create"; //done
+export{InputView} from "./input"; // done
+export{TokenMetadata} from "./tokenMetadata"; //done
+export {ContactView} from "./contact"; //done 

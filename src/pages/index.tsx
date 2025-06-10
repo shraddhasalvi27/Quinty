@@ -5,9 +5,6 @@ import Head from "next/head";
 import {
   HomeView,
   ToolView,
-  FeatureView,
-  OfferView,
-  FaqView,
   CreateView,
   ContactView,
   AirdropView,
@@ -31,40 +28,27 @@ const Home: NextPage = (props) => {
         />
       </Head>
       <HomeView setOpenCreateModal={setOpenCreateModal} />
-      <ToolView
+       <ToolView
         setOpenAirdrop={setOpenAirdrop}
         setOpenContact={setOpenContact}
         setOpenCreateModal={setOpenCreateModal}
         setOpenSendTransaction={setOpenSendTransaction}
         setOpenTokenMetaData={setOpenTokenMetaData}
       />
-      <FeatureView
-        setOpenAirdrop={setOpenAirdrop}
-        setOpenContact={setOpenContact}
-        setOpenCreateModal={setOpenCreateModal}
-        setOpenSendTransaction={setOpenSendTransaction}
-        setOpenTokenMetaData={setOpenTokenMetaData}
-      />
-      <OfferView />
-      <FaqView />
+      
       {openCreateModal && (
         <div className="new_loaer relative h-full bg-slate-900">
           <CreateView setOpenCreateModal={setOpenCreateModal} />
         </div>
       )}
-      {openTokenMetaData && (
+       {openTokenMetaData && (
         <div className="new_loaer relative h-full bg-slate-900">
           <TokenMetadata setOpenTokenMetaData={setOpenTokenMetaData} />
         </div>
       )}
-      {openTokenMetaData && (
-        <div className="new_loaer relative h-full bg-slate-900">
-          <ContactView setOpenTokenMetaData={setOpenTokenMetaData} />
-        </div>
-      )}
       {openContact && (
         <div className="new_loaer relative h-full bg-slate-900">
-          <TokenMetadata setOpenContact={setOpenContact} />
+          <ContactView setOpenContact={setOpenContact} />
         </div>
       )}
       {openAirdrop && (
@@ -76,7 +60,7 @@ const Home: NextPage = (props) => {
         <div className="new_loaer relative h-full bg-slate-900">
           <DonateView setOpenSendTransaction={setOpenSendTransaction} />
         </div>
-      )}
+      )}  
     </>
   );
 };
