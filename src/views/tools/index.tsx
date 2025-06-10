@@ -66,7 +66,7 @@ export const ToolView: FC<ToolViewProps> = ({
 
 
   return(
-    <section id='tools' className='py-20 bg-blue-900'>
+    <section id='tools' className='py-20 bg-black'>
       <div className='container'>
         <div className='mb-10 flex items-end justify-between'>
           <div className='mx-auto max-w-2xl text center'>

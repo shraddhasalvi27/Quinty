@@ -12,7 +12,7 @@ import "../styles/globals.css";
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <div className="bg-default-900 h-screen">
+    <div className="bg-default-900">
       <Head>
         <title>Solana token creator</title>
       </Head>

@@ -366,7 +366,7 @@ export const CreateView: FC<CreateViewProps> = ({ setOpenCreateModal }) => {
         <section
           className="flex w-full
                 items-center py-6 px-0 lg:h-screen
-                lg:p-10"
+                lg:pl-10"
         >
           <div className="container">
             <div
@@ -405,7 +405,7 @@ export const CreateView: FC<CreateViewProps> = ({ setOpenCreateModal }) => {
                         className="h-40"
                       />
                     </div>
-                    <div className="mt-5 w-full text-center">
+                    <div className="mt-5 w-full text-center pl-10">
                       <p className="text-default-300 text-base font-medium leading-6">
                         <InputView
                           name="Token Address"
